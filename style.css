@@ -1,0 +1,127 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.topo {
+    background-color: rgb(0 0 0 / 70%);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.titulo {
+    color: royalblue;
+    font-family: monospace;
+    font-size: clamp(1.5rem, 6vw, 5rem);
+    letter-spacing: 0.03em;
+    margin-bottom: 0.5rem;
+}
+
+.texto,
+.texto-rodape {
+    color: crimson;
+    font-size: 1.25rem;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+main {
+    isolation: isolate;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+}
+
+.logo-fundo,
+.teia-fundo {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.logo-fundo {
+    opacity: 1;
+}
+
+.teia-fundo {
+    opacity: 0.6;
+}
+
+.logo-fundo img,
+.teia-fundo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main>section {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.subtitulo {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.lista {
+    justify-content: center;
+    gap: 1rem;
+}
+
+.filme {
+    width: min(100%, 220px);
+    background-color: rgb(33 37 41 / 85%);
+    color: #fff;
+    text-align: center;
+}
+
+.nome {
+    margin: 0 0 0.75rem;
+    font-size: 1.25rem;
+}
+
+.capa {
+    display: block;
+    width: min(100%, 200px);
+    height: 300px;
+    margin: 0 auto 1rem;
+    object-fit: cover;
+    border: 3px solid;
+}
+
+.azul {
+    border-color: royalblue !important;
+}
+
+.vermelha {
+    border-color: crimson !important;
+}
+
+.links a {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.rodape {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.texto-rodape {
+    margin-bottom: 0.25rem;
+}
+
+.autor {
+    color: blue;
+    margin-bottom: 0;
+    text-align: right;
+}
